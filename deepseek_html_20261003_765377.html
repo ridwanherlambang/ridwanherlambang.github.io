@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M Ridwan Herlambang | Profil Digital</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            background: #ffffff;
+            max-width: 700px;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            animation: fadeIn 0.8s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2a5298, #1e3c72);
+            color: white;
+            text-align: center;
+            padding: 40px 20px 30px;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #ffffff;
+            color: #1e3c72;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px;
+            font-weight: bold;
+            margin: 0 auto 20px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .header h1 {
+            font-size: 26px;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .header .nim {
+            font-size: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+            margin-top: 8px;
+            letter-spacing: 1px;
+        }
+
+        .content {
+            padding: 30px 35px 40px;
+        }
+
+        .section {
+            margin-bottom: 28px;
+        }
+
+        .section h2 {
+            color: #1e3c72;
+            font-size: 18px;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e0e6f0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section h2::before {
+            content: '';
+            width: 5px;
+            height: 20px;
+            background: #2a5298;
+            border-radius: 3px;
+        }
+
+        .section p {
+            line-height: 1.7;
+            color: #555;
+            font-size: 15px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 8px;
+        }
+
+        .info-item {
+            background: #f4f7fc;
+            padding: 12px 16px;
+            border-radius: 10px;
+            border-left: 4px solid #2a5298;
+        }
+
+        .info-item .label {
+            font-size: 12px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .info-item .value {
+            font-size: 15px;
+            color: #1e3c72;
+            font-weight: 600;
+            margin-top: 3px;
+        }
+
+        .hobi-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        .hobi-tag {
+            background: #e8efff;
+            color: #2a5298;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .hobi-tag:hover {
+            background: #2a5298;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        .contact-links a {
+            text-decoration: none;
+            background: #2a5298;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .contact-links a:hover {
+            background: #1e3c72;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(42, 82, 152, 0.4);
+        }
+
+        .contact-links a.email {
+            background: #f4f7fc;
+            color: #2a5298;
+            border: 2px solid #2a5298;
+        }
+
+        .contact-links a.email:hover {
+            background: #2a5298;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f4f7fc;
+            color: #888;
+            font-size: 13px;
+        }
+
+        @media (max-width: 500px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            .header h1 {
+                font-size: 22px;
+            }
+            .content {
+                padding: 25px 20px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="avatar">MR</div>
+            <h1>M Ridwan Herlambang</h1>
+            <div class="nim">NIM: 2405110042</div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>Tentang Saya</h2>
+                <p>
+                    Halo! Saya <strong>M Ridwan Herlambang</strong>, seorang mahasiswa dengan NIM
+                    <strong>2405110042</strong>. Saya memiliki minat besar dalam dunia teknologi,
+                    pemrograman, dan pengembangan web. Halaman ini adalah profil digital pribadi
+                    saya sebagai tanda pengenal di dunia maya.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Informasi Pribadi</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="label">Nama Lengkap</div>
+                        <div class="value">M Ridwan Herlambang</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">NIM</div>
+                        <div class="value">2405110042</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Status</div>
+                        <div class="value">Mahasiswa</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">Bidang</div>
+                        <div class="value">Teknologi Informasi</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Minat & Hobi</h2>
+                <div class="hobi-list">
+                    <span class="hobi-tag">💻 Pemrograman</span>
+                    <span class="hobi-tag">🌐 Web Development</span>
+                    <span class="hobi-tag">📚 Membaca</span>
+                    <span class="hobi-tag">🎮 Gaming</span>
+                    <span class="hobi-tag">🎵 Musik</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Hubungi Saya</h2>
+                <div class="contact-links">
+                    <a href="mailto:ridwan@example.com" class="email">✉️ Email</a>
+                    <a href="https://github.com/" target="_blank">🐙 GitHub</a>
+                    <a href="https://instagram.com/" target="_blank">📷 Instagram</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            © 2025 M Ridwan Herlambang · NIM 2405110042 · Dibuat dengan ❤️
+        </footer>
+    </div>
+</body>
+</html>
